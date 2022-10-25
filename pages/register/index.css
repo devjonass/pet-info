@@ -1,0 +1,123 @@
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 90%;
+    background-color: #FCFEFF;
+}
+
+
+.session_register {
+    width: 369px;
+    height: 570px;
+    background-color: var(--grey-7);
+    border: 1px solid var(--grey-6);
+    border-radius: 4px;
+    padding: 24px;
+}
+
+.register_and_btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.register_and_btn>h3 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #1E1E1E;
+}
+
+.register_and_btn>button {
+    width: 133px;
+    height: 32px;
+    border: 1px solid var(--grey-6);
+    color: var(--grey-1);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+form>div {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--grey-1);
+}
+
+input {
+    padding: 0px 16px;
+    width: 321px;
+    height: 44px;
+    background-color: var(--grey-8);
+    border: 1px solid var(--grey-6);
+    border-radius: 4px;
+}
+
+
+form>button {
+    margin-top: 18px;
+    width: 321px;
+    height: 38px;
+    border: 1px solid var(--brand-1);
+    background-color: var(--brand-1);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--grey-7);
+    cursor: pointer;
+}
+
+
+.btn_back {
+    margin-top: 20px;
+    width: 320px;
+    height: 38px;
+    border: 1px solid var(--grey-6);
+    border-radius: 4px;
+    padding: 0px 16px;
+    background-color: var(--grey-6);
+    color: var(--grey-1);
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+.session_title {
+    margin-top: 100px;
+}
+
+.session_title>h1 {
+    font-weight: 500;
+    font-size: 32px;
+    color: var(--grey-1);
+    margin-bottom: 26px;
+}
+
+.session_title>h2 {
+    margin-bottom: 26px;
+}
+
+.session_title>p {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--grey-3);
+    margin-bottom: 17px;
+}
+

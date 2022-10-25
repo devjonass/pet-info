@@ -1,1 +1,156 @@
-/* Desenvolva a estilização da sua página aqui */
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    height: 80%;
+    background-color: #FCFEFF;
+}
+
+.session_title {
+
+    width: 50%;
+    min-width: 400px;
+
+
+}
+
+.session_title>h1 {
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--grey-1);
+    margin-bottom: 1.625rem;
+}
+
+.session_title>h2 {
+    margin-bottom: 1.625rem;
+}
+
+.session_title>p {
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--grey-3);
+    margin-bottom: 1.0625rem;
+}
+
+
+
+
+.session_login {
+    width: 368px;
+    background-color: var(--grey-7);
+    border: 1px solid var(--grey-6);
+    border-radius: 0.25rem;
+    padding: 1.5rem;
+}
+
+.session_login>div>h3 {
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: var(--grey-1);
+    margin-top: 2.75rem;
+    margin-bottom: 1.125rem;
+}
+
+form {
+    width: 321px;
+}
+
+form>div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    margin-bottom: 0.625rem;
+}
+
+
+label {
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--grey-1);
+}
+
+input {
+    padding: 0rem 1rem;
+    width: 321px;
+    height: 44px;
+    background-color: var(--grey-8);
+    border: 1px solid var(--grey-6);
+    border-radius: 0.25rem;
+}
+
+
+form>button {
+    width: 321px;
+    height: 38px;
+    border: 1px solid var(--brand-1);
+    background-color: var(--brand-1);
+    border-radius: 0.25rem;
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--grey-7);
+    cursor: pointer;
+}
+
+
+a {
+    display: flex;
+    margin-top: 1.125rem;
+    justify-content: center;
+    color: var(--grey-1);
+    font-weight: 500;
+    font-size: 0.875rem;
+    text-decoration: none;
+}
+
+
+.session_login>p {
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: var(--grey-3);
+    text-align: center;
+    margin-top: 1.125rem;
+}
+
+
+
+.btn_register {
+    margin-top: 1.25rem;
+    width: 320px;
+    height: 38px;
+    border: 1px solid var(--grey-6);
+    border-radius: 0.25rem;
+    padding: 0rem 1rem;
+    background-color: var(--grey-6);
+    color: var(--grey-1);
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+
+.spinner{
+    height: 15px;
+    animation: rotation 2s linear infinite;
+}
+
+@keyframes rotation{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}
+
+
+.btn-disabled {
+    opacity: 40%;
+}

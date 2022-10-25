@@ -1,0 +1,158 @@
+/* width 423px */
+
+
+.container {
+    margin: 5% auto;
+    width: 70vw;
+}
+
+
+.header_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_title>h1 {
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--grey-1);
+}
+
+.session_header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.session_header button {
+    width: 152px;
+    height: 38px;
+    background-color: var(--brand-1);
+    border: 1px solid var(--brand-1);
+    border-radius: 4px;
+    color: var(--grey-7);
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.session_feeds {
+    display: flex;
+    align-items: center;
+    background-color: var(--grey-9);
+    margin-top: 73px;
+    margin-bottom: 45px;
+    height: 64px;
+
+}
+
+img {
+    width: 41px;
+    border-radius: 50%;
+    border: 1px solid var(--brand-1);
+}
+
+.session_feeds>h3 {
+   
+   
+    padding-left: 15%;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--grey-1);
+
+}
+
+.session_posts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+
+.div_daddy {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.div_title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.div_title>p {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--grey-1);
+}
+
+.div_title>small {
+    color: var(--grey-6);
+}
+
+.div_title>span {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--grey-4);
+}
+
+
+.div_btns {
+    position: absolute;
+    left: 75%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.div_btns>button {
+    width: 55px;
+    height: 32px;
+    border: 1px solid var(--grey-6);
+    border-radius: 4px;
+    background-color: var(--grey-6);
+    color: var(--grey-1);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.div_btns>button:hover {
+    background-color: var(--grey-9);
+    color: var(--grey-4);
+
+}
+
+.p_1 {
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--grey-1);
+}
+
+.p_2 {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--grey-3);
+}
+
+
+.btn_acess {
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    border: none;
+    background-color: transparent;
+    color: var(--brand-1);
+    cursor: pointer;
+
+}
+
+.btn_acess:hover {
+    text-decoration: underline;
+}
