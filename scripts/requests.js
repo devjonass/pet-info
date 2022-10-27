@@ -15,10 +15,10 @@ async function login(body) {
 
     if (request.ok == true) {
       const response = await request.json();
-    
+
       toastLogin("Sucesso", "Login feito com sucesso");
 
-      localStorage.setItem("user", JSON.stringify(response));
+      localStorage.setItem("user", JSON.stringify(response.token));
 
       setTimeout(() => {
         window.location.replace("../home/index.html");
@@ -47,22 +47,22 @@ async function register(body) {
     console.log(error);
   }
 }
+
 async function getProfiles() {
-  const localStorage = getLocalStorage();
+  const localStoragge = getLocalStorage();
   try {
     const request = await fetch(`${baseUrl}users/profile`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${localStorage.token}`,
+        Authorization: `Bearer ${localStoragge}`,
       },
     });
 
     const response = await request.json();
-
+    localStorage.setItem("user:USERS", JSON.stringify(response));
 
     return response;
-
   } catch (error) {
     console.log(error);
   }
@@ -74,7 +74,7 @@ async function getPosts() {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${localStorage.token}`,
+        Authorization: `Bearer ${localStorage}`,
       },
     });
 
@@ -86,25 +86,69 @@ async function getPosts() {
   }
 }
 
-async function createPost(body){
-  const localStorage = getLocalStorage()
+async function createPost(body) {
+  const localStorage = getLocalStorage();
   try {
     const request = await fetch(`${baseUrl}posts/create`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${localStorage.token}`
+        Authorization: `Bearer ${localStorage}`,
       },
-      body: JSON.stringify(body)
-    })
-    const response = await request.json()
+      body: JSON.stringify(body),
+    });
 
-    console.log(request);
-  }catch(error){
+    const response = await request.json();
 
+    return response;
+  } catch (error) {
+    console.log(error);
   }
 }
-createPost()
 
+async function updatePost(body, idPost) {
+  const localStorage = getLocalStorage();
+  try {
+    const request = await fetch(`${baseUrl}posts/${idPost}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${localStorage}`,
+      },
+      body: JSON.stringify(body),
+    });
+    const response = await request.json();
 
-export { login, register, getPosts, getProfiles };
+    return response;
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+async function deletePost(idPost) {
+  const localStorage = getLocalStorage();
+  try {
+    const request = await fetch(`${baseUrl}posts/${idPost}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${localStorage}`,
+      },
+    });
+    const response = await request.json();
+
+    return response;
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+export {
+  login,
+  register,
+  getPosts,
+  getProfiles,
+  createPost,
+  updatePost,
+  deletePost,
+};

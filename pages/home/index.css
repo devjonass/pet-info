@@ -26,6 +26,7 @@
 
 }
 
+
 .session_header button {
     width: 152px;
     height: 38px;
@@ -55,9 +56,13 @@ img {
     border: 1px solid var(--brand-1);
 }
 
+img:hover{
+    content: "Sair da conta";
+}
+
 .session_feeds>h3 {
-   
-   
+
+
     padding-left: 15%;
     font-weight: 500;
     font-size: 20px;
@@ -113,6 +118,7 @@ img {
 
 .div_btns>button {
     width: 55px;
+   
     height: 32px;
     border: 1px solid var(--grey-6);
     border-radius: 4px;
@@ -156,3 +162,11 @@ img {
 .btn_acess:hover {
     text-decoration: underline;
 }
+
+
+
+
+
+
+
+

@@ -27,9 +27,8 @@ const eventLogin = () => {
       if (element.tagName == "INPUT" && element.value !== "") {
         body[element.id] = element.value;
         localStorage.setItem("user", JSON.stringify(element));
-      } 
+      }
     });
-    console.log(body);
 
     let image = document.createElement("img");
     image.classList = "spinner";

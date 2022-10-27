@@ -1,8 +1,0 @@
-1 - analisar o figma base pra poder ver os estilos e já ir vendo as tag que irão ficar no html
-2 - organizar meus arquivos e pastas 
-3 - estilizar primeiro o login que vai ser onde o usuário vai estar primeiro
-4 - estilizar a página de registro onde o usuário vai registrar pra depois clicar no botão de login 
-5 - criar minhas tag chumbada no meu html de login 
-6 - criar minhas tag chumbada no meu html de registro
-7 - analisar minha API no insomnia
-
