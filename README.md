@@ -2,7 +2,7 @@
 
 ## 📋 Sobre
 
-Pet Info: Pet Info é uma plataforma criada em Javascript Vanilla. O intuito da plataforma era de alguma forma conectar os donos de pet's. O projeto roda uma API local e é realizado um CRUD completo na aplicação.
+Pet Info: é uma plataforma criada em Javascript Vanilla. O intuito da plataforma era de alguma forma conectar os donos de pet's. O projeto roda uma API local e é realizado um CRUD completo na aplicação.
 
 ## 🔖 Layout
 
