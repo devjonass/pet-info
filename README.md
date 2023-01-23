@@ -8,7 +8,7 @@ Pet Info: é uma plataforma criada em Javascript Vanilla. O intuito da plataform
 
 Você pode visualizar o layout do projeto através dos links abaixo:
 
-- [Pages](https://symmetrical-sniffle-e2bd45f6.pages.github.io/pages/register/index.html) 
+- [Pages](https://kenzie-academy-brasil-developers.github.io/petinfobase-devjonass/pages/register/index.html) 
 
 
 Feito por [Jonas Dias](https://www.linkedin.com/in/jonas-diass/)
